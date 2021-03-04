@@ -1,3 +1,3 @@
 # Auto-Build-OpenWrt
-
-E8820S
+# 云编译E8820S-immortalwrt固件
+# build E8820S by nanchuci
