@@ -30,7 +30,7 @@ env:
   CONFIG_FILE: CTCGFW_OpenWrt_e8820s.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  PKG_LEAN: true
+  PKG_LEAN: flash
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
