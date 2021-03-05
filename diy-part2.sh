@@ -32,5 +32,12 @@ sed -i 's/OpenWrt_5G/ZTE-E8820S-5G/g' package/lean/mt-drivers/mt_wifi/files/mt76
 # 更改时区
 sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 
+# Clone community packages to package/community
+mkdir package/community
+pushd package/community
+
 # Add dnsfilter
 git clone --depth=1 https://github.com/garypang13/luci-app-dnsfilter
+
+# Add OpenAppFilter
+git clone --depth=1 https://github.com/destan19/OpenAppFilter
