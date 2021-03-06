@@ -41,3 +41,7 @@ git clone --depth=1 https://github.com/garypang13/luci-app-dnsfilter
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
+
+# Add jd
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+rm -rf ../ctcgfw/luci-app-jd-dailybonus
