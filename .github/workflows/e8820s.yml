@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build CTCGFW_OpenWrt_e8820s-18.06
+name: Build CTCGFW_OpenWrt_e8820s-多插件
 
 on:
   repository_dispatch:
@@ -25,9 +25,9 @@ on:
 
 env:
   REPO_URL: https://github.com/nanchuci/immortalwrt.git
-  REPO_BRANCH: openwrt-18.06
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: CTCGFW_OpenWrt_e8820s.config
+  CONFIG_FILE: e8820s.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   PKG_LEAN: flase
