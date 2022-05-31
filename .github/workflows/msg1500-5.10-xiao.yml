@@ -90,8 +90,6 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-    - name: clean feeds
-      run: cd openwrt && ./scripts/feeds clean
 
     - name: 下载feeds跟安装自定义插件
       run: cd openwrt && ./scripts/feeds update -a
