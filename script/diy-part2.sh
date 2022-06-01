@@ -19,10 +19,10 @@ sed -i 's/ImmortalWrt/MSG1500/g' package/base-files/files/bin/config_generate
 #sed -i 's/OpenWrt/RAISECOM-MSG1500-$/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 修改闭源驱动2G wifi名称
-sed -i 's/OpenWRT-2.4G/MSG1500/g' package/kernel/mt-drivers/mt7615d/files/lib/wifi/mt_dbdc.sh
+sed -i 's/OpenWRT-2.4G/RAISECOM-MSG1500/g' package/kernel/mt-drivers/mt7615d/files/lib/wifi/mt_dbdc.sh
 
 # 修改闭源驱动5G wifi名称
-sed -i 's/OpenWRT-5G/MSG1500-5G/g' package/kernel/mt-drivers/mt7615d/files/lib/wifi/mt_dbdc.sh
+sed -i 's/OpenWRT-5G/RAISECOM-MSG1500-5G/g' package/kernel/mt-drivers/mt7615d/files/lib/wifi/mt_dbdc.sh
 
 # 添加个性信息
 #sed -i 's/22.5.5/22.5.5 by nanchuci/g' ./package/lean/default-settings/files/zzz-default-settings
