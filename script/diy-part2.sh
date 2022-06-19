@@ -27,6 +27,9 @@ sed -i 's/OpenWRT-5G/RAISECOM-MSG1500-5G/g' package/kernel/mt-drivers/mt7615d/fi
 # 添加个性信息
 #sed -i 's/22.5.5/22.5.5 by nanchuci/g' ./package/lean/default-settings/files/zzz-default-settings
 
+# fix luci-app-easymesh
+sed -i 's/kmod-batman-adv +wpad-openssl/kmod-batman-adv +wpad-basic-wolfssl/g' feeds/luci/applications/luci-app-easymesh/Makefile
+
 # 修改banne文件（banne文件在根目录）（不要修改此行代码,怕弄的diy-lede.sh文件全失效,不需要的话前面加#，或者全行代码删除了）
 #rm -rf ./package/base-files/files/etc/banne && cd .. && cp -f ./banner openwrt/package/base-files/files/etc/ && cd openwrt
 
@@ -122,7 +125,7 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 #git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
+#git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 # Add luci-app-oled (R2S Only)
 #git clone --depth=1 https://github.com/NateLol/luci-app-oled
